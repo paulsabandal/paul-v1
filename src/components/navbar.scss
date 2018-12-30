@@ -38,8 +38,9 @@
 	.nav {
 		background-color: transparent;
 		border-bottom: 0;
-		line-height: 90px;
 		float: right;
+		font-weight: 700;
+		line-height: 90px;
 		display: none;
 
 		@include for-tablet-landscape-up {

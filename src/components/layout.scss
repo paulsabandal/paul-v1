@@ -45,6 +45,17 @@ body {
 	padding-top: 2rem;
 }
 
+.heading {
+	padding-bottom: 2rem;
+	.header {
+		color: $primary;
+	}
+	.sub-header {
+		font-size: 1.125rem;
+	}
+}
+
+
 // Utilities
 .text-center {
 	text-align: center;
@@ -56,20 +67,4 @@ body {
 
 .text-right {
 	text-align: right;
-}
-
-.fixed-paragraph-width {
-  font-size: 1.25rem;
-  max-width: 1000px;
-  margin: 0 auto;
-  text-align: left;
-  line-height: 2;
-}
-
-.divider {
-	padding: 0;
-	hr {
-		border: 0;
-		border-top: 1px solid $pale-grey;
-	}
 }

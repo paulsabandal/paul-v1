@@ -20,7 +20,7 @@ class Navbar extends Component {
           defaultSelectedKeys={['2']}
           className="nav"
         >
-          <Menu.Item key="1"><Link to="/">Ikigai</Link></Menu.Item>
+          <Menu.Item key="1"><Link to="/ikigai">Ikigai</Link></Menu.Item>
           <Menu.Item key="2"><Link to="/corporate">Work</Link></Menu.Item>
           <Menu.Item key="3"><a href={CV} target="_blank">Read my CV</a></Menu.Item>
         </Menu>
