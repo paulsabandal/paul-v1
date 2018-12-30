@@ -9,6 +9,7 @@
   display: none;
   position: absolute;
   right: 3rem;
+  z-index: 1;
   @include for-tablet-portrait-up {
 	  display: block;
   }

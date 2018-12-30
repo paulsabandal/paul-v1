@@ -1,28 +1,98 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { Row, Col } from 'antd'
+import { Row, Col, Divider, List } from 'antd'
 
 import Wrapper from '../components/layout'
 import SEO from '../components/seo'
 
+const love = [
+  'Checking out Great Products',
+  'Eating Good Food',
+  'Feeling Inspired by Creative Works',
+  'Following Startups',
+  'Innovative Products',
+  'Listening to Good Leaders',
+  'Making digital products in Web and Mobile',
+  'Sharing skills to people',
+  'Your Great Idea',
+];
+
+const good = [
+  'Branding',
+  'Cooking',
+  'Front-End Development',
+  'Finding New Tech-Trends',
+  'Product Design',
+  'Singing',
+  'User Interface Design',
+  'User Experience Design',
+];
+
+const paid = [
+  'By Branding a company',
+  'Creating user interfaces for web and mobile',
+  'Coding Websites'
+];
+
+const need = [
+  'Discipline',
+  'Empathy',
+  'Essentialism',
+  'Good Design',
+  'To know the Ikigai.'
+];
+
+
 const IkigaiPage = () => (
   <Wrapper>
-    <SEO title="Home" keywords={['gatsby', 'application', 'react']} />
+    <SEO title="Ikigai" keywords={['gatsby', 'application', 'react']} />
     <Row className="heading" gutter={16}>
       <Col span={18}>
         <h2 class="header">Ikigai, The reason for being.</h2>
-        <p class="sub-header">Let me tell you more about me using the Ikigai Format.</p>
+        <p class="sub-header">Value in one's life or the things that make one's life worthwhile. <a href="https://www.youtube.com/watch?v=pk-PcJS2QaU">How? Watch this.</a></p>
       </Col>
     </Row>
 
-    <Row gutter={16}>
-      <Col span={18}>
-        <p>One of those humans that shouts “Design is not how it looks like, it’s how it works!”</p>
-        <p>I'm a Product Designer based from Manila, Philippines. Crafting experiences using data gathered from users and market research, digitally.</p>
-        <p>Currently working as the Head of Product Development of Qwikwire, One of the rising startups here in the Philippines. We do cross-border payments for real-estate.</p>
-        <p>I'm helping to organize meetups for Figma here at the Philippines. So far, we’ve done the first ever Figma event not just in the Philippines, but also in Asia.</p>
-        <p>Recently, I just made a Figma version of the Value Proposition Canvas by Stategyzer AG</p>
-        <p>If you’d like to collaborate, talk about your project or brainstorm, feel free to message me during off-hours. Let’s grab a cup of coffee (on me),  Here’s my email paulwithjames@gmail.com.</p>
+    <Row gutter={16} className="listed-row">
+      <Col md={12} xs={24}>
+        <h4>What I love?</h4>
+        <Divider />
+        <List
+          dataSource={love}
+          renderItem={item => (<List.Item>{item}</List.Item>)}
+        />
+      </Col>
+      <Col md={12} xs={24}>
+        <h4>What I’m good at?</h4>
+        <Divider />
+        <List
+          dataSource={good}
+          renderItem={item => (<List.Item>{item}</List.Item>)}
+        />
+      </Col>
+    </Row>
+    <Row gutter={16} className="listed-row">
+      <Col md={12} xs={24}>
+        <h4>What the world needs?</h4>
+        <Divider />
+        <List
+          dataSource={need}
+          renderItem={item => (<List.Item>{item}</List.Item>)}
+        />
+      </Col>
+      <Col md={12} xs={24}>
+        <h4>What can be paid for?</h4>
+        <Divider />
+        <List
+          dataSource={paid}
+          renderItem={item => (<List.Item>{item}</List.Item>)}
+        />
+      </Col>
+    </Row>
+
+    <Row gutter={16} className="listed-row">
+      <Col md={24} xs={24}>
+        <h4>So, I feel that my Ikigai is to <strong>"Influence, Contribute and Create great products"</strong></h4>
       </Col>
     </Row>
   </Wrapper>

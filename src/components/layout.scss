@@ -43,6 +43,8 @@ body {
 .main-pages {
 	padding-bottom: 2rem;
 	padding-top: 2rem;
+	position: relative;
+	z-index: 2;
 }
 
 .heading {
@@ -52,6 +54,24 @@ body {
 	}
 	.sub-header {
 		font-size: 1.125rem;
+	}
+}
+
+.listed-row {
+
+	> div {
+		padding-bottom: 2rem;
+	}
+
+	.ant-divider-horizontal {
+		margin: 12px 0;
+	}
+	.ant-list-split .ant-list-item {
+		border: 0;
+	}
+	.ant-list-item {
+		padding: 4px;
+		border: 0;
 	}
 }
 

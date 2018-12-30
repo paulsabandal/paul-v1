@@ -12,10 +12,10 @@ class Footer extends Component {
     return (
       <div className="container">
         <Row>
-          <Col span={2}><Avatar shape="square" src={LinkedIn}/></Col>
-          <Col span={2}><Avatar shape="square" src={Dribbble}/></Col>
-          <Col span={2}><Avatar shape="square" src={Github}/></Col>
-          <Col span={2}><Avatar shape="square" src={Twitter}/></Col>
+          <Col md={2} xs={6}><a href="https://www.linkedin.com/in/paulsabandal/"><Avatar shape="square" src={LinkedIn}/></a></Col>
+          <Col md={2} xs={6}><a href="https://dribbble.com/paulwithjames"><Avatar shape="square" src={Dribbble}/></a></Col>
+          <Col md={2} xs={6}><a href="https://github.com/paulsabandal/"><Avatar shape="square" src={Github}/></a></Col>
+          <Col md={2} xs={6}><a href="https://twitter.com/paulwthjames"><Avatar shape="square" src={Twitter}/></a></Col>
         </Row>
         <img src={WaterMark} class="watermark" alt="Watermark of Paul" />
       </div>
