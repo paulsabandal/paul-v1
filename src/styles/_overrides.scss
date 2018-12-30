@@ -1,7 +1,7 @@
 .ant-btn-primary {
 	color: $white;
-  background-color: $rising-green;
-  border-color: $rising-green;
+  background-color: $primary;
+  border-color: $primary;
   padding: 8px 64px;
   height: auto;
   box-shadow: none;
@@ -12,10 +12,6 @@
 // carousel 
 .ant-carousel .slick-dots li.slick-active button {
 	background: $black;
-}
-
-.ant-carousel .slick-dots li button {
-	background: $silver;
 }
 
 .ant-layout {

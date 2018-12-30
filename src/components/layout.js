@@ -1,11 +1,15 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import { Layout } from 'antd'
 import { StaticQuery, graphql } from 'gatsby'
-
-import Header from './header'
+import Navbar from './navbar'
+import Footer from './footer'
 import './layout.scss'
 
-const Layout = ({ children }) => (
+const { Header, Content } = Layout;
+
+const App = ({ children }) => (
   <StaticQuery
     query={graphql`
       query SiteTitleQuery {
@@ -17,25 +21,36 @@ const Layout = ({ children }) => (
       }
     `}
     render={data => (
-      <>
-        <Header siteTitle={data.site.siteMetadata.title} />
-        <div
-          style={{
-            margin: '0 auto',
-            maxWidth: 960,
-            padding: '0px 1.0875rem 1.45rem',
-            paddingTop: 0,
-          }}
+      <div>
+        <Helmet
+          title={data.site.siteMetadata.title}
+          meta={[
+            { name: 'description', content: 'Sample' },
+            { name: 'keywords', content: 'sample, something' },
+          ]}
         >
-          {children}
-        </div>
-      </>
+          <html lang="en" />
+        </Helmet>
+        <Layout>
+          <Header className="main-header">
+            <Navbar />
+          </Header>
+          <Content>
+            <Layout>
+              <Content className="main-pages container">
+                {children} 
+              </Content>
+            </Layout>
+          </Content>
+          <Footer />
+        </Layout>
+      </div>
     )}
   />
 )
 
-Layout.propTypes = {
+App.propTypes = {
   children: PropTypes.node.isRequired,
 }
 
-export default Layout
+export default App
