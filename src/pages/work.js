@@ -5,7 +5,6 @@ import { Row, Col, Card } from 'antd'
 
 import Wrapper from '../components/layout'
 import SEO from '../components/seo'
-import htmlFile from 'raw-loader!./../docs/pica/merchant.html';
 import Figma from '../images/works/logo/figma.svg';
 import AQWIRE from '../images/works/logo/aqwire.svg';
 import PICA from '../images/works/logo/pica.svg';
@@ -51,7 +50,7 @@ const IndexPage = () => (
 
     <Row gutter={16} className="listed-row">
       <Col md={12} xs={24}>
-        <a className="work" href={withPrefix(htmlFile)} target="_blank">
+        <a className="work" href="https://confident-yalow-4d4404.netlify.com/merchant.html" target="_blank">
           <Card>
             <img src={PICA} className="logo" />
             <p>Acquire and Retain Loyal Customers through offering customizable incentives.</p>
