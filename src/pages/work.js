@@ -1,6 +1,5 @@
 import React from 'react'
 import { Link } from 'gatsby'
-import { withPrefix } from 'gatsby'
 import { Row, Col, Card } from 'antd'
 
 import Wrapper from '../components/layout'

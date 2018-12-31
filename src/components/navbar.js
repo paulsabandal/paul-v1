@@ -18,7 +18,7 @@ class Navbar extends Component {
       >
         <Menu.Item key="1"><Link to="/ikigai">Ikigai</Link></Menu.Item>
         <Menu.Item key="2"><Link to="/work">Work</Link></Menu.Item>
-        <Menu.Item key="3"><a href={CV} target="_blank">Read my CV</a></Menu.Item>
+        <Menu.Item key="3"><a href="https://drive.google.com/file/d/1SYRjipKg5D71OM0BciND0KbX4CE3_NzO/view" target="_blank">Read my CV</a></Menu.Item>
     </Menu>
     );
 
