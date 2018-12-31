@@ -1,10 +1,12 @@
 import React, { Component } from 'react'
 import Link from 'gatsby-link'
 import { Menu, Popover, Button } from 'antd'
+
 import Logo from '../images/logo.svg';
 import NavIcon from '../images/nav-icon-phone.svg';
 import CV from '../docs/paul-sabandal-cv.pdf';
 import './navbar.scss'
+
 
 class Navbar extends Component {
 

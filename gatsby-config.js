@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: 'Gatsby Antd Starter',
-    description: 'Kick off your next, great Gatsby project with this antd starter. This barebones starter ships with the main Gatsby configuration files you might need.',
-    author: '@cardiv',
+    title: 'Paul James Sabandal',
+    description: 'One of those humans that shouts “Design is not how it looks like, it’s how it works!”',
+    author: '@paulwithjames',
   },
   plugins: [
     {
@@ -37,7 +37,7 @@ module.exports = {
         background_color: '#663399',
         theme_color: '#663399',
         display: 'minimal-ui',
-        icon: 'src/images/gatsby-icon.png', // This path is relative to the root of the site.
+        icon: 'src/images/pjs-icon.png', // This path is relative to the root of the site.
       },
     },
     // this (optional) plugin enables Progressive Web App + Offline functionality

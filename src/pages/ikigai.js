@@ -47,9 +47,9 @@ const IkigaiPage = () => (
   <Wrapper>
     <SEO title="Ikigai" keywords={['gatsby', 'application', 'react']} />
     <Row className="heading" gutter={16}>
-      <Col span={18}>
+      <Col md={18} xs={24}>
         <h2 class="header">Ikigai, The reason for being.</h2>
-        <p class="sub-header">Value in one's life or the things that make one's life worthwhile. <a href="https://www.youtube.com/watch?v=pk-PcJS2QaU">How? Watch this.</a></p>
+        <p class="sub-header">Value in one's life or the things that make one's life worthwhile. <a href="https://www.youtube.com/watch?v=pk-PcJS2QaU">How to do it? Watch this.</a></p>
       </Col>
     </Row>
 
@@ -90,9 +90,10 @@ const IkigaiPage = () => (
       </Col>
     </Row>
 
-    <Row gutter={16} className="listed-row">
+    <Row className="closing" gutter={16}>
       <Col md={24} xs={24}>
-        <h4>So, I feel that my Ikigai is to <strong>"Influence, Contribute and Create great products"</strong></h4>
+        <h3>To "Influence, Contribute and Create great products".</h3>
+        <p>I feel that's my Ikigai. </p>
       </Col>
     </Row>
   </Wrapper>

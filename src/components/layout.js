@@ -3,6 +3,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { Layout } from 'antd'
 import { StaticQuery, graphql } from 'gatsby'
+
+import favicon from '../images/pjs-icon.png'
 import Navbar from './navbar'
 import Footer from './footer'
 import './layout.scss'
@@ -27,6 +29,9 @@ const App = ({ children }) => (
           meta={[
             { name: 'description', content: 'Sample' },
             { name: 'keywords', content: 'sample, something' },
+          ]}
+          link={[
+            { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
           ]}
         >
           <html lang="en" />
