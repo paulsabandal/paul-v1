@@ -27,8 +27,8 @@ const App = ({ children }) => (
         <Helmet
           title={data.site.siteMetadata.title}
           meta={[
-            { name: 'description', content: 'Sample' },
-            { name: 'keywords', content: 'sample, something' },
+            { name: 'description', content: 'Paul Sabandal' },
+            { name: 'keywords', content: 'One of those humans that shouts “Design is not how it looks like, it’s how it works!”' },
           ]}
           link={[
             { rel: 'shortcut icon', type: 'image/png', href: `${favicon}` }
