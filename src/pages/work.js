@@ -22,7 +22,7 @@ const IndexPage = () => (
     <Row className="heading" gutter={16}>
       <Col md={18} xs={24}>
         <h2 class="header">Work, what keeps me busy and going.</h2>
-        <p class="sub-header">Picked works that I’ve done so far.</p>
+        <p class="sub-header">I have a whole lot more under NDA.</p>
       </Col>
     </Row>
 
@@ -37,7 +37,7 @@ const IndexPage = () => (
         </a>
       </Col>
       <Col md={12} xs={24}>
-        <a className="work" href="https://beta.aqwire.io/" target="_blank">
+        <a className="work" href="https://aqwire-marketplace-staging.herokuapp.com/" target="_blank">
           <Card>
             <img src={AQWIRE} className="logo" />
             <p>Marketplace that can handle an end to end property acquisition, seamlessly.</p>
