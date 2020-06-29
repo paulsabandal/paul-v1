@@ -17,7 +17,7 @@ const IndexPage = () => (
     <Row gutter={16}> 
       <Col md={18} xs={24}>
         <p>
-          Product Designer/Manager based in the Philippines. Loves crafting meaningful <a href="/work" target="_blank">experiences</a> by solving digital problems through UX and Product Management.
+          Product Designer/Developer based in the Philippines. Loves crafting meaningful <a href="/work" target="_blank">experiences</a> by solving digital problems through UX and Product Development.
         </p>
 
         <p>
